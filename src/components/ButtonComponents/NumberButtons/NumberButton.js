@@ -1,4 +1,5 @@
 import React from "react";
+import "./number-button.scss";
 // import Numbers from "./Numbers";
 import "../../../App.css";
 
@@ -7,8 +8,8 @@ const NumberButton = props => {
 
   return (
     <button
+      className="number-button"
       onClick={() => props.addNumber(props.value)}
-      className="number-buton"
     >
       {props.value}
     </button>
