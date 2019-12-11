@@ -1,6 +1,8 @@
 import React from "react";
 import "./App.css";
-import { numbers } from "./Compo";
+// import NumberButton from "./components/ButtonComponents/NumberButtons/NumberButton";
+import Numbers from "./components/ButtonComponents/NumberButtons/Numbers";
+// import NumberButtons
 // STEP 4 - import the button and display components
 // Don't forget to import any extra css/scss files you build into the correct component
 
