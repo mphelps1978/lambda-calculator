@@ -1,9 +1,18 @@
 import React from "react";
+import "./number-button.scss";
+// import Numbers from "./Numbers";
+import "../../../App.css";
 
-const NumberButton = () => {
+const NumberButton = props => {
+  // console.log("NumberbUtton", props);
+
   return (
-    <>
-      {/* Display a button element rendering the data being passed down from the parent container on props */}
-    </>
+    <button
+      className="number-button"
+      onClick={() => props.addNumber(props.value)}
+    >
+      {props.value}
+    </button>
   );
 };
+export default NumberButton;
