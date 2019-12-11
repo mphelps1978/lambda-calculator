@@ -5,7 +5,12 @@ const OperatorButton = props => {
   // console.log(props);
   return (
     <>
-      <button>{props.operator.char}</button>
+      <button
+        onClick={() => props.addOperator(props.operator.value)}
+        className="number-button"
+      >
+        {props.operator.char}
+      </button>
     </>
   );
 };

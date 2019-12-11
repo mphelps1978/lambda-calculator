@@ -6,11 +6,15 @@ import OperatorButton from "./OperatorButton";
 
 //Import your array data to from the provided data file
 
-const Operators = () => {
+const Operators = props => {
   return (
     <div>
       {operators.map(operator => (
-        <OperatorButton key={operator} operator={operator} />
+        <OperatorButton
+          key={operator}
+          operator={operator}
+          addOperator={props.addOperator}
+        />
       ))}
     </div>
   );
