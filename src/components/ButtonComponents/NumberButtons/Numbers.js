@@ -10,7 +10,7 @@ import { numbers } from '../../../data'
 const Numbers = props => {
   console.log("Numbers: ", props);
   // STEP 2 - add the imported data to state
-  const [buttonValues, setButtonValues] = useState(numbers);
+  const [buttonValues] = useState(numbers);
   return (
     <div className="numButtonContainer">
       {/* STEP 3 - Use .map() to iterate over your array data and return a button

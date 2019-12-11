@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "./App.css";
-import NumberButton from "./components/ButtonComponents/NumberButtons/NumberButton";
+import "./App.scss";
+// import NumberButton from "./components/ButtonComponents/NumberButtons/NumberButton";
 import Numbers from "./components/ButtonComponents/NumberButtons/Numbers";
 import Operators from "./components/ButtonComponents/OperatorButtons/Operators";
 import Logo from "./components/DisplayComponents/Logo";
@@ -25,16 +25,18 @@ function App() {
       setDisplayValue(displayValue + " " + operator + " ");
     }
   };
+  // const addSpecial = special => {};
 
   return (
     <div className="container">
       <Logo />
       <div className="App">
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
+
         <Display number={displayValue} />
+        <Specials />
         <Numbers addNumber={addNumber} />
         <Operators addOperator={addOperator} />
-        <Specials />
       </div>
     </div>
   );
